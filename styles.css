@@ -296,7 +296,7 @@ footer.container {
 .button_close_modal {
     width: 24px;
     height: 24px;
-    margin: 24px 24px 528px 360px;
+    margin: 24px 24px 0px 360px;
     padding: 0;
     background: #E7E9FC;
     border-radius: 100px;
@@ -894,4 +894,101 @@ padding: 24px 100px 24px 100px;
 .cust_a_pic:focus {
     border: 1px solid #4D5AE5;
     fill: #4D5AE5;
+}
+
+.modal_header {
+    width: 360px;
+    height: 24px;
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 24px;
+    margin-left: 24px;
+    letter-spacing: 0.02em;
+    justify-content: center;
+}
+
+.accept_terms {
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+
+    padding-left: 24px;
+    letter-spacing: 0.04em;
+    color: #757575;
+}
+
+.check {
+    display: flex;
+    margin: 0;
+    margin-right: 8px;
+}
+
+.private_policy {
+    color: #4D5AE5;
+}
+
+.order_form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+}
+
+.form_label {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    margin-left: 24px;
+    margin-bottom: 8px;
+}
+
+.form_label:last-child {
+    margin-bottom: 16px;
+}
+
+.label_input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+}
+
+.button_send {
+    padding: 16px 32px;
+    margin: 24px 119px 24px 119px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comm_input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize:none
+}
+
+.send {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 1.18;
+}
+
+.label_text {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        color: #8E8F99;
 }
