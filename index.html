@@ -38,6 +38,27 @@
                 <button class="button_close_modal" data-modal-close>
                     <img class="cross" src="./images/Vector.svg" alt="close_button">
                 </button>
+                <h2 class="modal_header">Leave your contacts and we will call you back</h2>
+                <form class="order_form" name="orderservise_form" autocomplete="on">
+                    <label class="form_label" for="name">
+                        <span class="label_text">Name</span>
+                        <input class="label_input" name="name" id="name" type="text" required>
+                    </label>
+                    <label class="form_label" for="phone">
+                        <span class="label_text">Phone</span>
+                        <input class="label_input" name="tel" id="phone" type="tel" required>
+                    </label>
+                    <label class="form_label" for="email">
+                        <span class="label_text">Email</span>
+                        <input class="label_input" name="email" id="email" type="email" required>
+                    </label>
+                    <label class="form_label" for="comment">
+                        <span class="label_text">Comment</span>
+                        <textarea  class="comm_input" name="comment" id="comment" placeholder="Text input" rows="8"></textarea>
+                    </label>
+                    <p class="accept_terms"><input type="checkbox" class="check" required><label for="check">I accept the terms and conditions of the<a href=""><span class="private_policy">Private Policy</span></a></label></p>
+                    <button class="button_send" type="submit"><span class="send">Send</span></button>
+                </form>
             </div>
             </div>
         </section>
