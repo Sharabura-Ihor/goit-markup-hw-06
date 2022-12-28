@@ -283,36 +283,48 @@ footer.container {
     transform: translate(-50%, -50%) scale(1);
     transition: transform 0.5s ease-in-out;
     position: absolute;
-    max-width: 576px;
-    width: 408px;
-    height: 576px;
+    max-width: 408px;
+    max-height: 584px;
     left: 50%;
     top: 50%;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 24px;
 }
 
 .button_close_modal {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    padding-left: 360px;
     width: 24px;
     height: 24px;
-    margin: 24px 24px 0px 360px;
     padding: 0;
-    background: #E7E9FC;
     border-radius: 100px;
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 336px;
+    color: #000;
 }
 
 .button_close_modal:hover {
-    background: #E7E9FC;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border: #E7E9FC;
+    background: #4D5AE5;
+    border-radius: 100px;
+    color: #fff;
+}
+
+.button_close_modal:focus {
+    color: #fff;
 }
 
 .cross {
-    display: inline;
+    height: 8px;
+    width: 8px;
+}
 
+.cross_use {
+    fill: currentColor;
 }
 
 .button_order:hover {
@@ -412,7 +424,6 @@ footer.container {
     margin-right: auto;
     display: block;
     padding-bottom: 120px;
-    background-color: #F4F4FD;
 }
 
 
@@ -563,6 +574,10 @@ footer.container {
 .customers {
     font-family: 'Roboto';
     font-style: normal;
+}
+
+.ot_section {
+    background-color: #F4F4FD;
 }
 
 .footer_color {
@@ -905,10 +920,10 @@ padding: 24px 100px 24px 100px;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 24px;
-    margin-left: 24px;
+    padding-top: 48px;
     letter-spacing: 0.02em;
     justify-content: center;
+    padding-bottom: 16px;
 }
 
 .accept_terms {
@@ -918,8 +933,6 @@ padding: 24px 100px 24px 100px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
-
-    padding-left: 24px;
     letter-spacing: 0.04em;
     color: #757575;
 }
@@ -937,14 +950,13 @@ padding: 24px 100px 24px 100px;
 .order_form {
     display: flex;
     flex-direction: column;
-    padding-top: 16px;
+    align-items: center;
 }
 
 .form_label {
     display: flex;
     flex-direction: column;
     width: 360px;
-    margin-left: 24px;
     margin-bottom: 8px;
 }
 
@@ -955,13 +967,42 @@ padding: 24px 100px 24px 100px;
 .label_input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    height: 40px;
     background: #FCFCFC;
+    width: 322px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 34px;
+}
+
+.input_svg {
+    position: absolute;
+    width: 18px;
+    height: 24px;
+    padding-top: 13px;
+    left: 16px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_svg:hover{
+    fill: #4D5AE5;
+}
+
+.input_color:hover {
+    fill: #4D5AE5;
+}
+
+.div_svg {
+    position: relative;
+    display: block;
 }
 
 .button_send {
-    padding: 16px 32px;
-    margin: 24px 119px 24px 119px;
+    padding: 16px 64px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     text-align: center;
     letter-spacing: 0.04em;
     background: #4D5AE5;
@@ -975,6 +1016,8 @@ padding: 24px 100px 24px 100px;
     border-radius: 4px;
     resize:none;
     background: #FCFCFC;
+    padding-top: 12px;
+    padding-left: 16px;
 }
 
 .send {
@@ -993,6 +1036,7 @@ padding: 24px 100px 24px 100px;
         font-size: 12px;
         line-height: 1.16;
         color: #8E8F99;
+        margin-bottom: 4px;
 }
 
 
@@ -1007,6 +1051,7 @@ padding: 24px 100px 24px 100px;
     border-radius: 4px;
     height: 40px;
     width: 264px;
+    padding: 8px 0px 8px 16px;
 }
 
 .footer_text {
@@ -1031,6 +1076,7 @@ padding: 24px 100px 24px 100px;
 
 .footer_input {
     background-color: #2E2F42;
+    color: #FFFFFF;
 }
 
 .label_input:focus {
