@@ -90,11 +90,11 @@
             </div>
         </section>
         <section class="pecu">
-            <div  class="container">
+            <div  class="container_pecu">
         <h2 hidden>peculiarities</h2>
             <ul class="char_ul">
                 <li class="listchar">
-                    <a href="">
+                    <a  class="pecu_a" href="">
                     <div>
                         <svg class="char_svg">
                             <use href="./images/sprite.svg#icon-image"></use>
@@ -106,7 +106,7 @@
                     problem to walk away with the perfect and creative solution.</p>
                 </li>
                 <li class="listchar">
-                        <a href="">
+                        <a class="pecu_a" href="">
                     <div>
                         <svg class="char_svg">
                             <use href="./images/sprite.svg#icon-image1"></use>
@@ -117,7 +117,7 @@
                     <p class="char">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                 </li>
                 <li class="listchar">
-                <a href="">
+                <a class="pecu_a" href="">
                     <div>
                         <svg class="char_svg">
                             <use href="./images/sprite.svg#icon-image2"></use>
@@ -128,7 +128,7 @@
                     <p class="char">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                 </li>
                 <li class="listchar">
-                    <a href="">
+                    <a class="pecu_a" href="">
                     <div>
                         <svg class="char_svg">
                             <use href="./images/sprite.svg#icon-image3"></use>
@@ -142,10 +142,10 @@
             </div>
         </section>
         <section class="wawd_section">
-            <div class="container" >
+            <div class="container_wawd" >
             <h2 class="wawd">What Are We Doing</h2>
             <ul class="wawd_ul" style="list-style: none;">
-            <li class="wawd_img"><img src="images/image.jpg" alt="computer" width="360" height="300"></li>
+            <li class="wawd_img"><img class="img_wawd" src="images/image.jpg" alt="computer" width="360" height="300"></li>
             <li class="wawd_img"><img src="images/image(1).jpg" alt="phone" width="360" height="300"></li>
             <li class="wawd_img"><img src="images/image(2).jpg" alt="information in phone" width="360" height="300"></li>
             </ul>
@@ -155,7 +155,7 @@
         <div class="container_ot">
             <h2 class="ot">Our Team</h2>
             <ul class="teamates" style="list-style: none;">
-            <li class="teamates_box"><img src="images/image(3).jpg" alt="man" width="264" height="260"><div class="teametes_div">
+            <li class="teamates_box"><img class="team_img" src="images/image(3).jpg" alt="man" width="264" height="260"><div class="teametes_div">
                 <h3 class="teamate_name">Mark Guerrero</h3><p class="teamate_prof">Product Designer</p>
                 <div>
                     <ul class="four_svg">
@@ -181,7 +181,7 @@
                         </li>
                 </ul>
                 </div></li>
-            <li class="teamates_box"><img src="images/image(4).jpg" alt="man" width="264" height="260"><div class="teametes_div">
+            <li class="teamates_box"><img class="team_img" src="images/image(4).jpg" alt="man" width="264" height="260"><div class="teametes_div">
                 <h3 class="teamate_name">Tom Ford</h3><p class="teamate_prof">Frontend Developer</p>
                 <div>
                     <ul class="four_svg">
@@ -207,7 +207,7 @@
                         </li>
                     </ul>
                 </div></li>
-            <li class="teamates_box"><img src="images/image(5).jpg" alt="women" width="264" height="260"><div class="teametes_div">
+            <li class="teamates_box"><img class="team_img" src="images/image(5).jpg" alt="women" width="264" height="260"><div class="teametes_div">
                 <h3 class="teamate_name">Camila Garcia</h3><p class="teamate_prof">Marketing</p>
                 <div>
                     <ul class="four_svg">
@@ -233,7 +233,7 @@
                         </li>
                     </ul>
                 </div></li>
-            <li class="teamates_box"><img src="images/image(6).jpg" alt="man" width="264" height="260"><div class="teametes_div">
+            <li class="teamates_box"><img class="team_img" src="images/image(6).jpg" alt="man" width="264" height="260"><div class="teametes_div">
                 <h3 class="teamate_name">Daniel Wilson</h3><p class="teamate_prof">UI Designer</p>
                 <div>
                     <ul class="four_svg">
@@ -314,11 +314,12 @@
          </main>
         <footer class="footer_color">
             <div class="container_footer">
-                <div>
+                <div class="webstudio_footer_div">
                         <a class="webstudio_footer" href="index.html"><span class="web">WEB</span>STUDIO</a>
+                        <div class="footer_p ">
                         <p class="footer_text">Increase the flow of customers and sales for your business with digital marketing
                             &
-                            growth solutions.</p>
+                            growth solutions.</p></div>
                             </div>
                     <div class="footer_cont">
                     <h2 class="footer_media">Social Media</h2>
@@ -346,8 +347,8 @@
                         </ul>
                     </div>
                 <form  class="footer_form">
-                    <label for="email">
-                            <span class="footer_text">Subscribe</span>
+                    <label class="footer_label" for="email">
+                            <span class="footer_text_span">Subscribe</span>
                             <input class="footer_input" placeholder="E-mail" class="footer_input" name="subscribe" id="email" type="email" required>
                         <button class="footer_button" type="submit"><span class="subscribe">Subscribe <svg class="sub_svg">
                             <use href="./images/sprite.svg#teleg"></use>
