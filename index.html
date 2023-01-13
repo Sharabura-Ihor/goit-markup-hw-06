@@ -28,6 +28,52 @@
             <li class="listcont"><a class="cont" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li class="listcont"><a class="cont" href="tel:+110001111111">+ 11 (000) 111-11-11</a></li>
         </ul>
+<div class="container_menu">
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu_svg">
+            <use href="./images/sprite.svg#menu_button"></use>
+        </svg>
+    </button>
+</div>
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="close_button_div">
+        <button class="menu_toggle_closing js-close-menu">
+            <svg class="cross">
+                <use href="./images/sprite.svg#cross"></use>
+            </svg>
+        </button>
+        </div>
+        <ul class="menu_nav">
+            <li class="menu_li"><a class="menu_a" href="">Studio</a></li>
+            <li class="menu_li"><a class="menu_a" href="">Portfolio</a></li>
+            <li class="menu_li"><a class="menu_a" href="">Contacts</a></li>
+        </ul>
+        <a class="menu_tel" href="tel:+110001111111">+ 11 (000) 111-11-11</a>
+        <a class="menu_mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+        <ul class="four_menu_svg">
+            <li class="svg_li_menu">
+                <a class="ot_a" href=""><svg>
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg></a>
+            </li>
+            <li class="svg_li_menu">
+                <a class="ot_a" href=""><svg>
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg></a>
+            </li>
+            <li class="svg_li_menu">
+                <a class="ot_a" href=""><svg>
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg></a>
+            </li>
+            <li class="svg_li_menu">
+                <a class="ot_a" href=""><svg>
+                    <use href="./images/sprite.svg#icon-linkedin2"></use>
+                </svg></a>
+            </li>
+        </ul>
+        </div>
     </header>
     <main>
         <section class="service_order">
@@ -357,6 +403,7 @@
                 </form>
             </div>
         </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     </body>
     </html>
