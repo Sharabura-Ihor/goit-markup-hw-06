@@ -1158,17 +1158,29 @@ button {
     position: absolute;
 }
 
+    .menu-container,
+    .js-menu-container {
+        opacity: 0;
+        position: absolute;
+        width: 1px;
+    }
+
 @media screen and (max-width: 480px)  {
 
     .container_menu {
         opacity: 1;
         position: relative;
+        padding-right: 16px;
     }
 
     .menu-toggle {
         width: 44px;
         height: 22px;
         background-color: #FFFFFF;
+    }
+
+    .nav_style {
+        padding-left: 15px;
     }
 
     .menu_toggle_closing {
@@ -1178,7 +1190,11 @@ button {
         border-radius: 100px;
         background: #E7E9FC;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
+        margin-left: 87%;
     }
 
     .menu_toggle_closing:hover{
@@ -1200,9 +1216,11 @@ button {
 
     header.container {
        width: 100%;
-       padding-top: 0;
        padding-top: 24px;
        padding-bottom: 24px;
+       padding-left: 0px;
+       padding-right: 0px;
+       justify-content: space-between;
     }
 
     .service_order {
@@ -1232,7 +1250,8 @@ button {
         font-style: normal;
         font-weight: 600;
         font-size: 36px;
-        padding-top: 40px;
+        padding-top: 80px;
+        padding-left: 40px;
     }
 
     .menu_a {
@@ -1254,6 +1273,8 @@ button {
     .four_menu_svg {
         display: flex;
         padding-top: 48px;
+        padding-left: 40px;
+        padding-bottom: 40px;
     }
 
     .svg_li_menu {
@@ -1274,6 +1295,7 @@ button {
             color: #4D5AE5;
             height: 40px;
             padding-top: 284px;
+            padding-left: 40px;
     }
 
     .menu_mail {
@@ -1285,19 +1307,22 @@ button {
         color: #434455;
         height: 24px;
         padding-top: 40px;
+        padding-left: 40px;
     }
 
     .close_button_div {
-        padding-left: 364px;
+        padding-top: 40px;
     }
 
     .is-open {
         opacity: 1;
         background-color: #FFFFFF;
         display: flex;
-        width: 428px;
-        padding: 40px;
+        left: 0%;
+        top: 0%;
+        width: 100%;
         flex-wrap: wrap;
+        position: fixed;
     }
 
     .cont {
@@ -1314,8 +1339,12 @@ button {
     }
 
     .listchar {
-        width: 396px;
         margin-right: 0;
+        margin-bottom: 72px;
+    }
+
+    .listchar:last-child {
+        margin-bottom: 0;
     }
 
     .char_ul {
@@ -1330,9 +1359,19 @@ button {
         justify-content: center;
     }
 
+    .pecu {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .char_header {
         display: flex;
         justify-content: center;
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 40px;
     }
 
     .container_cust {
@@ -1353,6 +1392,7 @@ button {
 
     .teamates {
         flex-direction: column;
+        align-items: center;
     }
 
     .wawd_img {
@@ -1364,19 +1404,11 @@ button {
         flex-direction: column;
         padding: 16px 40px 16px 40px;
     }
-
-    .cust_svg:last-child {
-        margin-right: 16px;
-    }
-
+    
     .cust_svg {
         margin: 0;
         margin-right: 16px;
         margin-bottom: 72px;
-    }
-
-    .char_svg {
-        
     }
 
     .cust_ul {
@@ -1399,6 +1431,7 @@ button {
         width: 264px;
         height: 436px;
         margin-bottom: 72px;
+        margin-right: 0px;
     }
 
     .teamates_box:last-child {
@@ -1411,12 +1444,14 @@ button {
         margin: 0 auto;
         padding-left: 0;
         padding-top: 120px;
-        padding-bottom: 120px;
         align-items: center;
     }
 
     .container_ot {
         padding-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .container_footer {
@@ -1456,7 +1491,6 @@ button {
 
     .footer_input {
         margin-bottom: 16px;
-        width: 394px;
     }
 
     .footer_cont {
@@ -1481,35 +1515,56 @@ button {
         align-items: center;
     }
 
+    .webstudio_footer_div {
+        margin-right: 0;
+    }
+
     .webstudio_footer {
         justify-content: center;
     }
 }
 
-@media screen and (max-width: 1200px) {
-    
+@media screen and (min-width: 481px) and (max-width: 768px) {
 
     header.container {
         justify-content: space-between;
         width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .nav_style {
+        padding-left: 16px;
     }
 
     .webstudio {
         margin: 0;
     }
 
+    .menu-container,
+    .js-menu-container {
+        opacity: 0;
+        position: absolute;
+        width: 1px;
+    }
+
     .listchar {
-        width: 270px;
         margin-right: 24px;
         flex-wrap: wrap;
         font-size: 36px;
         line-height: 1.11;
+        width: 356px;
+    }
+
+    .listchar:nth-child(-n + 2) {
+        margin-bottom: 72px;
     }
 
     .cont_ul {
         margin: 0;
         flex-direction: column;
-        padding: 0;
+        padding-bottom: 0;
+        padding-right: 16px;
     }
 
     .listchar:nth-child(2n) {
@@ -1570,13 +1625,7 @@ button {
         padding: 16px 32px 16px 32px;
     }
     
-    .cust_svg:last-child {
-        margin-right: 16px;
-    }
-    
     .cust_svg {
-        margin: 0;
-        margin-right: 16px;
         margin-bottom: 72px;
     }
     
@@ -1602,14 +1651,8 @@ button {
         margin-bottom: 72px;
     }
     
-    .teamates_box:last-child {
-        margin-right: 24px;
-    }
-    
     .container_ot {
         padding-bottom: 0;
-        padding-right: 82px;
-        padding-left: 82px;
     }
 
     .ot_section {
@@ -1643,13 +1686,13 @@ button {
 
         .webstudio_footer_div {
             margin-bottom: 72px;
+            margin-right: 24px;
         }
     
         .footer_cont {
             margin-left: 0;
             display: flex;
             flex-direction: column;
-            margin-left: 24px;
         }
     
         .footer_media {
@@ -1658,4 +1701,64 @@ button {
 
 }
 
+@media screen and (min-width: 320px) and (max-width: 368px) {
+     .svg_li_menu {
+        margin-right: 20%;
+     }
+}
 
+@media screen and (min-width:769px) and (max-width: 1200px) {
+     header.container {
+        width: auto;
+     }
+     
+     .container_cust {
+        transform: scale(0.8)
+     }
+
+     .pecu {
+        justify-content: center;
+     }
+
+     .container_pecu {
+        transform: scale(0.8)
+     }
+
+     .ot_section {
+        display: flex;
+        justify-content: center;
+     }
+
+     .container_ot {
+        transform: scale(0.8)
+     }
+
+     .wawd_section{
+        transform: scale(0.8)
+     }
+
+     .wawd_img img{
+        height: 100%;
+     }
+
+     .teamates_box img {
+        height: auto;
+     }
+
+     .footer_color {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+
+     .footer_input {
+        width: 190px;
+     }
+
+     .container_footer {
+        transform: scale(0.8);
+        width:100%;
+     }
+     
+
+}
