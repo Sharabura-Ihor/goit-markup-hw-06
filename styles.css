@@ -1286,6 +1286,14 @@ button {
         margin-right: 0;
     }
 
+    .studio_page_menu {
+        color: #404BBF;
+    }
+
+    .studio_page_menu::after {
+        color: #404BBF;
+    }
+
     .menu_tel {
         font-family: 'Roboto';
             font-style: normal;
@@ -1362,6 +1370,8 @@ button {
     .pecu {
         padding-left: 16px;
         padding-right: 16px;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 
     .char_header {
@@ -1377,6 +1387,7 @@ button {
     .container_cust {
         padding-left: 16px;
         padding-right: 16px;
+        padding-bottom: 0;
     }
 
     .container_wawd {
@@ -1404,6 +1415,10 @@ button {
         flex-direction: column;
         padding: 16px 40px 16px 40px;
     }
+
+    .cust_header {
+        padding-top: 96px;
+    }
     
     .cust_svg {
         margin: 0;
@@ -1413,6 +1428,10 @@ button {
 
     .cust_ul {
         flex-wrap: wrap;
+    }
+
+    .cust_svg:nth-child(2n) {
+        margin-right: 0;
     }
 
     .team_img {
@@ -1443,7 +1462,6 @@ button {
         display: flex;
         margin: 0 auto;
         padding-left: 0;
-        padding-top: 120px;
         align-items: center;
     }
 
@@ -1452,6 +1470,7 @@ button {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        padding-top: 96px;
     }
 
     .container_footer {
@@ -1460,6 +1479,8 @@ button {
         width: 100%;
         padding-left: 0;
         padding-right: 0;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 
     .footer_label {
@@ -1655,13 +1676,45 @@ button {
         padding-bottom: 0;
     }
 
+    .service_order {
+        padding-top: 112px;
+        padding-bottom: 108px;
+    }
+
+    .pecu {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    .teamates_box:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .cust_svg:nth-last-child(4) {
+        margin-right: 0;
+    }
+
+    .teamates_box:nth-child(n + 2){
+        margin-bottom: 0;
+    }
+
+    .solut {
+        margin-bottom: 40px;
+    }
+
     .ot_section {
         display: flex;
         margin: 0 auto;
         padding-left: 0;
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 96px;
         align-items: center;
+    }
+
+    .container_cust {
+        padding-bottom: 0;
+    }
+
+    .cust_header {
+        padding-top: 96px;
     }
     
         .container_footer {
@@ -1682,6 +1735,11 @@ button {
     
         .footer_form {
             padding-left: 0;
+            padding-right: 45px;
+        }
+
+        .footer_input {
+            width: 247px;
         }
 
         .webstudio_footer_div {
@@ -1759,6 +1817,23 @@ button {
         transform: scale(0.8);
         width:100%;
      }
-     
+}
 
+@media screen and (max-width: 320px) {
+    .cust_svg {
+        margin-right: 0px;
+    }
+
+    .backdrop {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .modal {
+        transform: scale(0.7);
+        left: 0;
+        top: 0;
+        position: relative;
+    }
 }
