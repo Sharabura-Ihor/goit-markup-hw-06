@@ -1337,6 +1337,10 @@ button {
         opacity: 0;
     }
 
+    .menu_tel {
+        padding-top: 150px;
+    }
+
     .cont_ul {
         padding-bottom: 0;
         position: absolute;
@@ -1835,5 +1839,9 @@ button {
         left: 0;
         top: 0;
         position: relative;
+    }
+
+    .menu_tel {
+        padding-top: 150px;
     }
 }
